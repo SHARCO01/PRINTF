@@ -6,11 +6,11 @@
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 22:05:28 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/16 23:19:10 by ilaghrai         ###   ########.fr       */
+/*   Updated: 2025/11/18 02:53:48 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	print_int(int n)
 {

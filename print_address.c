@@ -6,11 +6,11 @@
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 22:29:37 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/18 00:54:17 by ilaghrai         ###   ########.fr       */
+/*   Updated: 2025/11/18 02:53:22 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static int	print_long_hexa(unsigned long n)
 {

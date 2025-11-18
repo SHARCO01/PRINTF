@@ -6,11 +6,12 @@
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 21:48:17 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/17 23:16:31 by ilaghrai         ###   ########.fr       */
+/*   Updated: 2025/11/18 03:01:38 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
+
 
 int	ft_printf(const char *format, ...)
 {
@@ -41,9 +42,11 @@ int	ft_printf(const char *format, ...)
 			else if (format[i] == 'X')
 				count += print_up_hexa(va_arg(arg, unsigned int));
 			else if (format[i] == 'p')
-				count += print_address(va_arg(arg, unsigned long));
+				count += print_address(va_arg(arg, void *));
 			else if (format[i] == '%')
 				count += write(1, "%", 1);
+			else if (format[i + 1] != '\0')
+				break ;
 		}
 		else
 			count += write(1, &format[i], 1);

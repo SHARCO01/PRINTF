@@ -6,11 +6,11 @@
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 22:14:09 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/16 22:14:39 by ilaghrai         ###   ########.fr       */
+/*   Updated: 2025/11/18 02:54:19 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	print_string(char *s)
 {

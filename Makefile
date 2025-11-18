@@ -10,7 +10,7 @@ SRCS = ft_printf.c  \
 	   print_address.c
 
 
-OBJS = $(srcs:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
 

@@ -6,11 +6,11 @@
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 22:22:07 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/17 23:04:43 by ilaghrai         ###   ########.fr       */
+/*   Updated: 2025/11/18 02:54:05 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	print_lw_hexa(unsigned int n)
 {

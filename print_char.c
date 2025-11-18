@@ -6,14 +6,13 @@
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 22:03:48 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/17 01:52:51 by ilaghrai         ###   ########.fr       */
+/*   Updated: 2025/11/18 02:53:34 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-int print_char(char c)
+int	print_char(char c)
 {
-    write (1, &c, 1);
-    return 1;
+	return (write (1, &c, 1));
 }
