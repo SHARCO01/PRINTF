@@ -1,13 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   print_unsigned_int.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 18:27:07 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/15 22:09:37 by ilaghrai         ###   ########.fr       */
+/*   Created: 2025/11/16 22:16:22 by ilaghrai          #+#    #+#             */
+/*   Updated: 2025/11/18 00:53:02 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include
+#include "libftprintf.h"
+
+int	print_unsigned_int(unsigned int n)
+{
+	int	count;
+
+	count = 0;
+	if (n < 0)
+		
+}

@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   print_string.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 18:14:11 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/14 18:26:21 by ilaghrai         ###   ########.fr       */
+/*   Created: 2025/11/16 22:14:09 by ilaghrai          #+#    #+#             */
+/*   Updated: 2025/11/16 22:14:39 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "libftprintf.h"
 
-void	ft_putstr(char *s)
+int	print_string(char *s)
 {
-	int	i;
+	int	len;
 
-	i = 0;
+	len = 0;
 	if (!s)
-		return (null);
-	while (s[i])
-	{
-		write (1, &s[i], 1);
-		i++;
-	}
+		s = "(null)";
+	while (s[len])
+		len++;
+	return (write(1, s, len));
 }

@@ -1,6 +1,14 @@
 NAME = libftprintf.a
 
-SRCS = print_char.c print_string.c print_int.c ft_strlen.c print_hexa.c
+SRCS = ft_printf.c  \
+	   print_char.c  \
+	   print_string.c \
+	   print_int.c     \
+	   print_up_hexa.c  \
+	   print_lw_hexa.c	 \
+	   print_unsigned_int.c \
+	   print_address.c
+
 
 OBJS = $(srcs:.c=.o)
 
@@ -15,7 +23,7 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) $@ $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@

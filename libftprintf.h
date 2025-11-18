@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   libftprintf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilaghrai <ilaghrai@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 18:02:10 by ilaghrai          #+#    #+#             */
-/*   Updated: 2025/11/15 23:02:31 by ilaghrai         ###   ########.fr       */
+/*   Created: 2025/11/16 21:57:37 by ilaghrai          #+#    #+#             */
+/*   Updated: 2025/11/18 00:53:53 by ilaghrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#ifndef LIBFTPRINTF_H
+# define LIBFTPRINTF_H
 
-int	ft_atoi(const char *str)
-{
-	int	i;
-	int	sign;
-	int	result;
+# include <stdarg.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
 
-	i = 0;
-	sign = 1;
-	result = 0;
-	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == ' ')
-		i++;
-	if (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
-	}
-	while (str[i] && (str[i] >= '0' && str[i] <= '9'))
-	{
-		result = result * 10 + (str[i] - '0');
-		i++;
-	}
-	return (result * sign);
-}
+int	ft_printf(const char *format, ...);
+int	print_char(char c);
+int	print_int(int n);
+int	print_string(char *s);
+int	print_unsigned_int(unsigned int);
+int	print_lw_hexa(unsigned int n);
+int	print_up_hexa(unsigned int n);
+int	print_address(void *pointer);
+
+#endif
